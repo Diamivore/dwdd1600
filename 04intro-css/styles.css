@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #003049;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 1rem 10px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #D62828;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #F77F00;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+header {
+    font-size: large;
+    margin: 1em 0;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #003049;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+address {
+    background-color: #EAE2B7;
+    padding: 1em;
+    width: 280px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #003049;
+    border-bottom: 4px solid #D62828;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-height: 48px;
+}
+
+nav li {
+    margin: 0 1em;
+    padding: 0;
+}
+
+nav a {
+    color: #EAE2B7;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background-color: #D62828;
+    color: #FCBF49;
+}
+
+nav a.active {
+    background-color: #D62828;
+    color: #EAE2B7;
+}
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+
+ol {
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+
+dl {
+    border-left: 4px solid #FCBF49;
+    padding-left: 2em;
+    margin-bottom: 2em;
+}
+
+dt {
+    font-weight: 700;
+    color: #D62828;
+    margin-top: 1em;
+}
+
+dd {
+    margin-left: 0;
+    color: #003049;
+    font-size: 0.95rem;
+}
+
+
+/* Footer Styling */
+footer p {
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    font-size: 0.95rem;
+    border-top: 4px solid #D62828;
+    margin: 0;
+    padding: 1em 0;
+}
+
+footer a {
+    color: #FCBF49;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+/* Pseudo Class for Content Links */
+main a:hover {
+    color: #D62828;
+    text-decoration: underline;
+}
