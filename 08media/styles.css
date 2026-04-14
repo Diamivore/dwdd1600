@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* ===== Box Model Fix ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #003049;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+}
+header img.logo {
+    width: auto;
+    height: 80px;
+    flex-shrink: 0;
+}
+header .site-title span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #D62828;
+    display: block;
+}
+header .site-title p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #003049;
+    letter-spacing: 1px;
+}
+
+/* ===== Navigation — Mobile (default, stacked) ===== */
+nav {
+    background-color: #003049;
+    border-bottom: 4px solid #D62828;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    display: block;
+    color: #EAE2B7;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 14px 16px;
+    border-bottom: solid 3px transparent;
+    transition: background 0.2s, color 0.2s;
+}
+nav a:hover {
+    background-color: #D62828;
+    color: #FCBF49;
+}
+nav a.active {
+    background-color: #D62828;
+    color: #EAE2B7;
+    border-bottom: solid 3px #FCBF49;
+}
+
+/* ===== Navigation — Large Screen ===== */
+@media only screen and (min-width: 601px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-height: 48px;
+    }
+    nav li {
+        margin: 0 0.25rem;
+    }
+    nav a {
+        border-bottom: solid 3px transparent;
+    }
+}
+
+/* ===== Main ===== */
+main {
+    padding: 1rem 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== Hero Image ===== */
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0, 48, 73, 0.4);
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #D62828;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #F77F00;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #003049;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* ===== Lists ===== */
+ul {
+    list-style-type: square;
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+ol {
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+dl {
+    border-left: 4px solid #FCBF49;
+    padding-left: 2em;
+    margin-bottom: 2em;
+}
+dt {
+    font-weight: 700;
+    color: #D62828;
+    margin-top: 1em;
+}
+dd {
+    margin-left: 0;
+    color: #003049;
+    font-size: 0.95rem;
+}
+
+/* ===== Home Page Figure ===== */
+figure.home-image {
+    float: right;
+    width: 35%;
+    margin: 0 0 1.5em 1.5em;
+    max-width: 350px;
+}
+figure.home-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #D62828;
+    border-radius: 8px;
+}
+figure.home-image figcaption {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #003049;
+    font-weight: 700;
+    margin-top: 0.75em;
+    background-color: #EAE2B7;
+    padding: 0.75em;
+    border-radius: 4px;
+}
+
+/* ===== Gallery ===== */
+section.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em 0;
+}
+figure.gallery-item {
+    width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+    margin: 0;
+}
+figure.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #D62828;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+figure.gallery-item img:hover {
+    box-shadow: 4px 6px 16px rgba(214, 40, 40, 0.5);
+    transform: scale(1.03);
+}
+figure.gallery-item figcaption {
+    font-size: 0.95rem;
+    color: #003049;
+    font-weight: 700;
+    margin-top: 0.75em;
+    background-color: #EAE2B7;
+    padding: 0.75em;
+    border-radius: 4px;
+}
+
+/* ===== Footer ===== */
+footer {
+    clear: both;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer p {
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    font-size: 0.95rem;
+    border-top: 4px solid #D62828;
+    margin: 0;
+    padding: 1em 0;
+}
+footer a {
+    color: #FCBF49;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* ===== Content Links ===== */
+main a:hover {
+    color: #D62828;
+    text-decoration: underline;
+}
+
+/* ===== Responsive Video ===== */
+.video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 1rem 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ===== Responsive Map ===== */
+.map-wrap {
+    position: relative;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+    margin: 1rem 0;
+    border: 2px solid #D62828;
+    border-radius: 6px;
+}
+.map-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ===== Audio ===== */
+audio {
+    width: 100%;
+    margin: 1rem 0;
+    display: block;
+}
+
+/* ===== Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+table th {
+    background-color: #003049;
+    color: #EAE2B7;
+    padding: .7rem 1rem;
+    text-align: left;
+    font-weight: 700;
+}
+table td {
+    padding: .6rem 1rem;
+    color: #333;
+}
+table tr:nth-child(even) td {
+    background-color: #f0f4f8;
+}
+table tr:hover td {
+    background-color: #EAE2B7;
+    color: #003049;
+}
+
+/* ===== PDF Link ===== */
+.pdf-link {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: .8rem 1.5rem;
+    background-color: #D62828;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+.pdf-link:hover {
+    background-color: #003049;
+    color: #EAE2B7;
+}

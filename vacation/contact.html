@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chase Olinquevitch">
+    <meta name="description" content="Contact Aloha Horizon Vacations to start planning your perfect Hawaii vacation">
+    <title>Contact - Aloha Horizon Vacations</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="vacation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/logo.png" alt="Aloha Horizon Vacations Logo" class="logo">
+        <div class="site-title">
+            <span>Aloha Horizon Vacations</span>
+            <p>Your Hawaii Dream Awaits</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Request More Information</h1>
+        <p>Ready to start planning your Hawaii vacation? Fill out the form below and one of our Hawaii specialists will contact you within one business day to discuss your dream trip. All fields marked with an asterisk (*) are required.</p>
+
+        <form action="thanks.html" method="get">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Jane Smith" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(801) 555-0100">
+            </fieldset>
+
+            <!-- Trip Preferences -->
+            <fieldset>
+                <legend>Trip Preferences</legend>
+
+                <label for="destination">Preferred Island *</label>
+                <select id="destination" name="destination" required>
+                    <option value="">-- Select an island --</option>
+                    <option value="oahu">Oahu</option>
+                    <option value="maui">Maui</option>
+                    <option value="bigisland">Big Island</option>
+                    <option value="kauai">Kauai</option>
+                    <option value="hopper">Island Hopper (Multi-Island)</option>
+                    <option value="unsure">Not sure yet</option>
+                </select>
+
+                <label>Travel Party Type *</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="party" value="couple" required>
+                        Couple / Romantic Getaway
+                    </label>
+                    <label>
+                        <input type="radio" name="party" value="family">
+                        Family with Children
+                    </label>
+                    <label>
+                        <input type="radio" name="party" value="solo">
+                        Solo Traveler
+                    </label>
+                    <label>
+                        <input type="radio" name="party" value="group">
+                        Group (6 or more)
+                    </label>
+                </div>
+
+                <label for="budget">Estimated Budget per Person *</label>
+                <select id="budget" name="budget" required>
+                    <option value="">-- Select budget range --</option>
+                    <option value="under2k">Under $2,000</option>
+                    <option value="2k-3k">$2,000 – $3,000</option>
+                    <option value="3k-5k">$3,000 – $5,000</option>
+                    <option value="5kplus">$5,000+</option>
+                </select>
+            </fieldset>
+
+            <!-- Message -->
+            <fieldset>
+                <legend>Additional Details</legend>
+
+                <label for="travel_date">Preferred Travel Month</label>
+                <input type="text" id="travel_date" name="travel_date" placeholder="e.g., July 2026">
+
+                <label for="comments">Tell us about your dream Hawaii vacation *</label>
+                <textarea id="comments" name="comments" rows="6"
+                          placeholder="Share any special interests, celebrations, accessibility needs, or questions you have. The more you tell us, the better we can tailor your perfect Hawaiian experience."
+                          required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Send My Inquiry">
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Aloha Horizon Vacations &bull; 1-800-ALOHA-HI &bull; <a href="mailto:aloha@alohahorizon.com">aloha@alohahorizon.com</a> &bull; Honolulu, HI 96815</p>
+    </footer>
+</body>
+</html>
