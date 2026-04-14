@@ -1,0 +1,35 @@
+/* =============================================
+   The Rustic Fork – rustic.css
+   Unit 06 Forms Project
+   ============================================= */
+body { font-family: 'Lato', sans-serif; font-weight: 300; margin: 0; font-size: 16px; background-color: #FDF8F2; color: #2C1810; }
+header { background-color: #FDF8F2; padding: 1rem 2vw; border-bottom: 3px solid #C4622D; }
+header span { font-size: 2.2rem; font-weight: 700; color: #C4622D; letter-spacing: 2px; }
+nav { background-color: #2C1810; }
+nav ul { margin: 0; padding: 0 2vw; list-style-type: none; display: flex; }
+nav a { display: block; padding: .83rem 1.2rem; font-size: 1rem; font-weight: 400; text-decoration: none; color: #ffffff; letter-spacing: 1px; }
+nav .active a { background-color: #C4622D; color: #ffffff; }
+nav a:hover { background-color: #C4622D; color: #ffffff; }
+main { padding: 1.5rem 2vw; max-width: 900px; }
+main h1 { font-size: 2rem; font-weight: 700; color: #C4622D; margin: 0 0 1rem 0; }
+main h2 { font-size: 1.3rem; font-weight: 700; color: #2C1810; margin: 1rem 0 .5rem 0; }
+main p { line-height: 1.7; margin: 0 0 1rem 0; color: #3D2414; }
+main ul { line-height: 1.9; color: #3D2414; margin: 0 0 1rem 0; }
+main a { color: #C4622D; }
+main a:hover { text-decoration: underline; }
+footer { border-top: 2px solid #D9C8B8; text-align: center; font-size: .75rem; color: #7A6050; padding: 1rem 0; margin-top: 2rem; }
+footer a { color: #C4622D; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.required-note { font-size: .85rem; color: #7A6050; margin: 0 0 1.2rem 0; }
+.my-form fieldset { border: 1px solid #C4622D; border-radius: 4px; margin-bottom: 1.5rem; padding: 1rem 1.2rem; background-color: #ffffff; }
+.my-form legend { font-weight: 700; font-size: .95rem; color: #C4622D; padding: 0 .5rem; background-color: #ffffff; letter-spacing: .5px; }
+.my-form label { display: block; margin-bottom: .85rem; font-size: .9rem; color: #2C1810; }
+.my-form label.inline { display: flex; align-items: center; gap: .5rem; margin-bottom: .5rem; }
+.my-form input[type="text"], .my-form input[type="email"], .my-form input[type="tel"], .my-form select, .my-form textarea { display: block; width: 100%; max-width: 420px; border: 1px solid #C4622D; border-radius: 4px; padding: .5rem .65rem; font-family: 'Lato', sans-serif; font-size: .9rem; font-weight: 300; background-color: #FEF5EC; color: #2C1810; margin-top: .3rem; box-sizing: border-box; }
+.my-form input[type="text"]:focus, .my-form input[type="email"]:focus, .my-form input[type="tel"]:focus, .my-form select:focus, .my-form textarea:focus { outline: 2px solid #C4622D; outline-offset: 1px; background-color: #ffffff; }
+.my-form textarea { min-height: 110px; resize: vertical; }
+.my-form input[type="submit"] { background-color: #C4622D; border: 2px solid #9E4A1E; border-radius: 10px; padding: .9rem 2.2rem; font-family: 'Lato', sans-serif; font-size: 1rem; font-weight: 700; color: #ffffff; cursor: pointer; letter-spacing: 1px; margin-top: .5rem; }
+.my-form input[type="submit"]:hover { background-color: #9E4A1E; }
+.thanks-box { border: 2px solid #C4622D; border-radius: 6px; padding: 2rem; max-width: 520px; text-align: center; margin: 2rem 0; background-color: #ffffff; }
+.thanks-box h1 { margin-bottom: .75rem; }
+.thanks-box p { font-size: 1rem; color: #3D2414; }

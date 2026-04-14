@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Order online from The Rustic Fork – pickup or local delivery available.">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rustic.css">
+    <title>Order Online – The Rustic Fork</title>
+</head>
+<body>
+    <header><span>The Rustic Fork</span></header>
+    <nav><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li class="active"><a href="order.html">Order Online</a></li>
+    </ul></nav>
+    <main>
+        <h1>Order Online</h1>
+        <p class="required-note">Please fill out the form below to place your order. Fields marked with <strong>*</strong> are required.</p>
+        <form method="get" action="thanks.html" class="my-form">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>Full Name *
+                    <input type="text" name="fullName" placeholder="Jane Smith" required>
+                </label>
+                <label>Email Address *
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <label>Phone Number *
+                    <input type="tel" name="phone" placeholder="(555) 555-5555" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Order Type</legend>
+                <label class="inline">
+                    <input type="radio" name="orderType" value="pickup"> Pickup (ready in 20 minutes)
+                </label>
+                <label class="inline">
+                    <input type="radio" name="orderType" value="delivery"> Local Delivery (45–60 minutes)
+                </label>
+                <label class="inline">
+                    <input type="radio" name="orderType" value="curbside"> Curbside (stay in your car)
+                </label>
+                <label>Preferred Pickup / Delivery Time
+                    <select name="preferredTime">
+                        <option value="">Please Select</option>
+                        <option value="asap">As Soon As Possible</option>
+                        <option value="lunch">Lunch (11am – 1pm)</option>
+                        <option value="afternoon">Afternoon (1pm – 4pm)</option>
+                        <option value="dinner">Dinner (5pm – 8pm)</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Menu Selections</legend>
+                <p>Check everything you'd like to order (see our <a href="menu.html">Menu</a> for descriptions).</p>
+                <label class="inline"><input type="checkbox" name="item_focaccia" value="yes"> Rosemary Focaccia — $7</label>
+                <label class="inline"><input type="checkbox" name="item_bruschetta" value="yes"> Heirloom Tomato Bruschetta — $9</label>
+                <label class="inline"><input type="checkbox" name="item_beet_salad" value="yes"> Roasted Beet Salad — $11</label>
+                <label class="inline"><input type="checkbox" name="item_chicken_pasta" value="yes"> Grilled Chicken Pasta — $16</label>
+                <label class="inline"><input type="checkbox" name="item_risotto" value="yes"> Wild Mushroom Risotto — $15</label>
+                <label class="inline"><input type="checkbox" name="item_salmon" value="yes"> Pan-Seared Salmon — $19</label>
+                <label class="inline"><input type="checkbox" name="item_burger" value="yes"> Farmhouse Burger — $14</label>
+                <label class="inline"><input type="checkbox" name="item_cookie" value="yes"> Warm Skillet Cookie — $8</label>
+                <label class="inline"><input type="checkbox" name="item_tiramisu" value="yes"> Classic Tiramisu — $7</label>
+            </fieldset>
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <label>Dietary needs, allergies, or other requests
+                    <textarea name="specialInstructions" placeholder="e.g. No nuts, gluten-free please, extra sauce on the side…"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Place My Order">
+        </form>
+    </main>
+    <footer><p>&copy;2025 &bull; Chase Olinquevitch &bull; <a href="mailto:hello@rusticfork.com">hello@rusticfork.com</a></p></footer>
+</body>
+</html>
