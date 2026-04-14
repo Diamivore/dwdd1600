@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Request a drone delivery – fill out the form below to get started.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="delivery.css">
+    <title>Request a Delivery – Drone Delivery</title>
+</head>
+<body>
+
+    <!-- page header -->
+    <header>
+        <span>Drone Delivery</span>
+    </header>
+
+    <!-- page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li class="active"><a href="delivery.html">Request a Delivery</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- page main -->
+    <main>
+        <h1>Request a Delivery</h1>
+
+        <p>Please fill out the form below to schedule your drone delivery. Fields marked with <strong>*</strong> are required.</p>
+
+        <form method="get" action="thanks.html" class="my-form">
+
+            <!-- Customer Information fieldset -->
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <label>First Name *
+                    <input type="text" name="fName" required>
+                </label>
+
+                <label>Last Name *
+                    <input type="text" name="lName" required>
+                </label>
+
+                <label>Email Address *
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+
+                <label>Phone Number
+                    <input type="tel" name="phone" placeholder="(555) 555-5555">
+                </label>
+
+            </fieldset>
+
+            <!-- Delivery Method fieldset -->
+            <fieldset>
+                <legend>Delivery Method</legend>
+
+                <label class="inline">
+                    <input type="radio" name="deliveryMethod" value="standard"> Standard Drone (1–2 hours)
+                </label>
+
+                <label class="inline">
+                    <input type="radio" name="deliveryMethod" value="express"> Express Drone (30 minutes)
+                </label>
+
+                <label class="inline">
+                    <input type="radio" name="deliveryMethod" value="ground"> Ground Courier (same day)
+                </label>
+
+            </fieldset>
+
+            <!-- Delivery Options fieldset -->
+            <fieldset>
+                <legend>Delivery Options</legend>
+
+                <p>Where should we drop off your package?</p>
+
+                <label class="inline">
+                    <input type="checkbox" name="porch" value="chosen"> Front Porch
+                </label>
+
+                <label class="inline">
+                    <input type="checkbox" name="backDoor" value="chosen"> Back Door
+                </label>
+
+                <label class="inline">
+                    <input type="checkbox" name="garage" value="chosen"> Garage
+                </label>
+
+                <label class="inline">
+                    <input type="checkbox" name="mailbox" value="chosen"> Mailbox Area
+                </label>
+
+                <label>Preferred Delivery Time
+                    <select name="deliveryTime">
+                        <option value="">Please Select</option>
+                        <option value="morning">Morning (8am – 12pm)</option>
+                        <option value="afternoon">Afternoon (12pm – 5pm)</option>
+                        <option value="evening">Evening (5pm – 8pm)</option>
+                    </select>
+                </label>
+
+            </fieldset>
+
+            <!-- Comments fieldset -->
+            <fieldset>
+                <legend>Comments</legend>
+
+                <label>Additional Instructions or Comments
+                    <textarea name="comments" placeholder="Please leave your package in a safe location…"></textarea>
+                </label>
+
+            </fieldset>
+
+            <input type="submit" value="Submit Request">
+
+        </form>
+    </main>
+
+    <!-- page footer -->
+    <footer>
+        <p>&copy;2024 &bull; Chase Olinquevitch &bull; <a href="mailto:chase@dronedelivery.com">Email Us</a></p>
+    </footer>
+
+</body>
+</html>

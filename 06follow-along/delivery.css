@@ -1,0 +1,232 @@
+/* =============================================
+   Drone Delivery – delivery.css
+   Unit 06 Follow Along Activity
+   ============================================= */
+
+/* ----- Base ----- */
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* ----- Header ----- */
+header {
+    background-color: #ffffff;
+    padding: 1rem 2vw;
+    border-bottom: 3px solid #43A0B6;
+}
+
+header span {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #43A0B6;
+    letter-spacing: 2px;
+}
+
+/* ----- Navigation ----- */
+nav {
+    background-color: #222222;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .83rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+nav .active a {
+    background-color: #43A0B6;
+    color: #ffffff;
+}
+
+nav a:hover {
+    background-color: #43A0B6;
+    color: #ffffff;
+}
+
+/* ----- Main ----- */
+main {
+    padding: 1.5rem 2vw;
+    max-width: 900px;
+}
+
+main h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #43A0B6;
+    margin: 0 0 1rem 0;
+}
+
+main h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #222222;
+    margin: 1rem 0 .5rem 0;
+}
+
+main p {
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+    color: #333333;
+}
+
+main ul {
+    line-height: 1.8;
+    color: #333333;
+    margin: 0 0 1rem 0;
+}
+
+main a {
+    color: #43A0B6;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* ----- Footer ----- */
+footer {
+    border-top: 2px solid #cccccc;
+    text-align: center;
+    font-size: .75rem;
+    color: #666666;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #43A0B6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================================
+   Form Styles – added in Unit 06
+   ============================================== */
+
+/* Required field note */
+.required-note {
+    font-size: .8rem;
+    color: #666666;
+    margin: 0 0 1rem 0;
+}
+
+/* Fieldset & legend */
+.my-form fieldset {
+    border: 1px solid #43A0B6;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.2rem;
+}
+
+.my-form legend {
+    font-weight: 500;
+    font-size: .95rem;
+    color: #43A0B6;
+    padding: 0 .5rem;
+    background-color: #ffffff;
+}
+
+/* Labels */
+.my-form label {
+    display: block;
+    margin-bottom: .75rem;
+    font-size: .9rem;
+    color: #333333;
+}
+
+/* Inline radio/checkbox labels */
+.my-form label.inline {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+/* All text-entry inputs, selects, and textareas */
+.my-form input[type="text"],
+.my-form input[type="email"],
+.my-form input[type="tel"],
+.my-form select,
+.my-form textarea {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid #43A0B6;
+    border-radius: 3px;
+    padding: .45rem .6rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: .9rem;
+    font-weight: 200;
+    background-color: #f0f8fb;
+    color: #222222;
+    margin-top: .25rem;
+    box-sizing: border-box;
+}
+
+.my-form input[type="text"]:focus,
+.my-form input[type="email"]:focus,
+.my-form input[type="tel"]:focus,
+.my-form select:focus,
+.my-form textarea:focus {
+    outline: 2px solid #43A0B6;
+    outline-offset: 1px;
+    background-color: #ffffff;
+}
+
+.my-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Submit button */
+.my-form input[type="submit"] {
+    background-color: #43A0B6;
+    border: 2px solid #2d8599;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: .5rem;
+}
+
+.my-form input[type="submit"]:hover {
+    background-color: #357f91;
+}
+
+/* Thanks page */
+.thanks-box {
+    border: 2px solid #43A0B6;
+    border-radius: 6px;
+    padding: 2rem;
+    max-width: 500px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.thanks-box p {
+    font-size: 1rem;
+    color: #333333;
+}
